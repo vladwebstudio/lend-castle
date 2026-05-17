@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Дякуємо за замовлення!</title>
+<style>
+/* ---------- BASE STYLES ---------- */
+body {
+  font-family: "Inter", sans-serif;
+  background: #fcd9b1;
+  margin: 0;
+}
+
+.container {
+  background: linear-gradient(135deg, #fae2bd 0%, #f8bd82 100%);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 90%;
+  margin: 40px auto;
+  border: 1px solid #d9665b;
+}
+
+h1 {
+  color: #d9665b;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #d9665b;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #e08f68;
+}
+
+/* ---------- MOBILE RADICAL ADAPTATION ---------- */
+@media (max-width: 640px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    border: 0;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  button {
+    width: 110%;
+    padding: 18px 0;
+    font-size: 20px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Дякуємо за замовлення!</h1>
+  <p>Ми отримали ваше замовлення і скоро з вами зв’яжемося.<br>Очікуйте дзвінка або повідомлення протягом робочого дня.</p>
+  <p style="color: #d9665b; font-size: 14px; margin-top: 20px;"><strong>Тестовий режим:</strong> замовлення надіслано для перевірки</p>
+  <button onclick="window.history.back()">Повернутися назад</button>
+</div>
+</body>
+</html>
